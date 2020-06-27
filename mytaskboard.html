@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Task Board</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"  integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="mytaskboard.css"> <!--CSS script-->
+</head>
+<body>
+   
+    <div class="heading">
+        <h1>My Task Board</h1>     
+    </div>
+    <div id="form-div" >
+        <form id="form" onsubmit="return false">
+            <div id="task-div">
+                <textarea id="task-body" placeholder="Please fill your note here:" required></textarea>            
+            </div>
+            
+        <div id="bottom-div">   
+            <div id="dateandtime">
+                <input class="task-input" type="date" id="date" placeholder="Due Date:" required> 
+                <input class="task-input" type="time" id="time" placeholder="Time:">
+            </div>           
+            <div id="buttons">
+                <button type="submit" id="save">Save</button>
+                <button  type="reset" id="clean">Clean</button>
+            </div>
+        </div>                    
+        </form> 
+    </div>
+    <div id="notes">
+        <div id="rows"></div> <!--If there is new line between the open div and the end div then childNode returns something-->
+    </div>
+<script src="mytaskboard.js"></script><!--JS script-->
+</body>
+</html>

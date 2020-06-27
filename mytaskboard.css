@@ -1,0 +1,173 @@
+html ,body{
+    height: 100%;
+    background-image: url(Images/33935124-yellow-wood-cork-board-texture.jpg);    
+} 
+
+.heading{ /*. is for classes*/
+height: 15%;
+}
+
+h1{
+text-align: center;
+font-family: Brush Script MT;
+font-size: 60px;
+}
+
+#form-div{
+    margin: auto;
+    display: block;
+    width: 50%;
+    height: 30%;
+    background-image: url(Images/lined-paper1951239-canvas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#form{  
+    height: 100%;
+}
+
+#task-div{
+    display:flex;
+    flex-direction: row-reverse;
+    height: 70%;
+    width: 100%;
+}
+
+#task-body{
+    width: 88%;
+    height: 100%;
+    background: unset;
+    border: unset;
+    font-family: Comic Sans, Comic Sans MS, cursive;
+    font-size: x-large;
+    line-height: 120%;
+    resize: unset;
+}
+
+#bottom-div{
+    position: absolute;
+    bottom: 29.3%;
+    width: 49%;
+    height: 30%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+#dateandtime{
+    margin-left: 10%;
+    }
+
+.task-input{
+font-size: 20px;
+}
+
+button{
+background: unset;
+border-radius: 5px;
+width: 80px;
+height: 23px;
+font-size: 15px;
+margin-right: 10px;
+}
+
+input{
+    background: unset;
+    border: unset;
+    margin-left: 15px;
+    width: fit-content;
+    font-family: Comic Sans, Comic Sans MS, cursive;
+    }
+
+#notes{
+    display: table;
+    height: 40%;
+    margin-top: 2%;
+    margin-left: 2%;
+    border-spacing: 20px;
+}
+
+#rows{
+    display: table-row;
+}
+
+#note-div {
+    display: table-cell;
+    animation: fadein 3s;
+    display:inline-block;
+    width: 270px;
+    height: 270px;
+    background: url(Images/yellowNote.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    position: relative; 
+    
+  }
+
+@keyframes fadein {
+    from {opacity:0 ;}
+    to {opacity:1 ;} 
+}
+
+#note-div button{
+    display: none;
+    border:none;
+    background: unset;
+    width: min-content;
+    position: absolute;
+    top: 11px;
+    right: 0px; 
+    
+  }
+
+  #note-div:hover > button { display: inline-block; }
+
+  #textareaid {
+    border: unset;
+    background: unset;
+    resize: unset;
+    font-family: Comic Sans, Comic Sans MS, cursive;
+    font-size: 18px;
+    width: 75%;
+    height: 60%;
+    margin-top: 45px;
+    margin-left: 17px;
+    padding: 10px;
+  }
+
+.datetimeparagraphclass{
+
+    display: inline-block;
+    background: unset;
+    border: unset;
+    margin-left: 15px;
+    width: fit-content;
+    font-family: Comic Sans, Comic Sans MS, cursive;
+    margin-top: 14px;
+
+}
+
+
+/*
+If the cube is directly inside the container:
+#container:hover > #cube { background-color: yellow; }
+
+If cube is next to (after containers closing tag) the container:
+#container:hover + #cube { background-color: yellow; }
+
+If the cube is somewhere inside the container:
+#container:hover #cube { background-color: yellow; }
+
+If the cube is a sibling of the container:
+#container:hover ~ #cube { background-color: yellow; }
+*/
+
+  
+
+
+
+
+
+
